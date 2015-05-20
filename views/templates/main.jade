@@ -1,0 +1,8 @@
+.container(ng-controller='MainController')
+  h1 Add options...
+  .container.row
+    .input-group.col-md-6.col-lg-6.col-sm-6
+      span.btn.input-group-addon.submit-button(ng-click="submitChoice()") Add it to the list...
+      input.form-control(type="text" ng-model="entry" placeholder="Enter choices...")
+  options-list
+  winner

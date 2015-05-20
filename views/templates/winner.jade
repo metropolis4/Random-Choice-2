@@ -1,0 +1,8 @@
+.container(ng-show="entries.length >= 2")
+  h2 The Choice
+  button.btn.choose(ng-click="choose()") Random Choice...
+
+.container(ng-show="finalChoice.length > 1")
+  h2 Random Choice has chosen...
+  .container.the-choice.pull-left
+    h1 {{ finalChoice }}

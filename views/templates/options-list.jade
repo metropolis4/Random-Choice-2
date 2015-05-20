@@ -1,0 +1,8 @@
+.container(ng-show="entries.length > 0")
+  h2 The List
+.container(ng-repeat="entry in entries")
+  .entry(class="active-{{entry.active}}") {{ entry.entry }}
+  input(type="checkbox" ng-model="entry.active" id="{{entry.entry}}")
+  label(for="{{entry.entry}}")
+    span.glyphicon.glyphicon-remove-circle.delete-item
+  h2 {{ dismiss }}
