@@ -7,7 +7,7 @@
     "stylus": "^0.51.1"
   },
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "mocha --reporter nyan"
   },
   "devDependencies": {

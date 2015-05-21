@@ -13,5 +13,6 @@ app.get '/', indexController.index
 app.get '/templates/:templateid', (req,res) ->
   res.render 'templates/' + req.params.templateid
 
-server = app.listen 3001, ->
+port = process.env.PORT || 3001
+server = app.listen port, ->
   console.log "Express server listening on port #{server.address().port}"
