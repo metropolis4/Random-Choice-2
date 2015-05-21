@@ -1,11 +1,12 @@
-.container(ng-controller='MainController')
-  h1 Add Choices To Make A Random Selection...
+.container.main-container(ng-controller='MainController')
   a.pull-right.read-me(href="#/info") read me...
-  .container.row
+  h1 Add Choices To Make A Random Selection...
+  .container.entries-container
     form.form-inline(ng-submit="submitChoice()")
-      .form-group.col-md-6.col-lg-6.col-sm-6
-        input.entry-input(type="text" ng-model="entry" placeholder="Enter choices..." required)
-        input.submit-button(type="submit" value="Add it to the list...")
+      .form-group.row.entry-group
+        input.col-md-3.col-sm-4.col-xs-8.entry-input(type="text" ng-model="entry" placeholder="Enter choices..." required)
+        input.col-md-2.col-sm-3.col-xs-4.submit-button(type="submit" value="Add it to the list...")
+
 
   options-list
   winner

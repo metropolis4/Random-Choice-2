@@ -20,13 +20,23 @@ a:hover
   text-decoration none
   color inherit
 
+.main-container
+  @media screen and (max-width: 770px)
+    width 100%
+    padding 0
+
 .read-me
   background tomato
   color #fff
   position relative
-  top -66px
+  top -1px
   padding 5px
   border-radius 0 0 10px 10px
+  @media screen and (max-width: 770px)
+    width 100%
+    border-radius 0
+    height 53px
+    font-size 1.5em
 
 .read-me:hover
   background #777
@@ -41,6 +51,11 @@ a:hover
   position relative
   top -5px
   right 16px
+  @media screen and (max-width: 770px)
+    border-radius 0
+    top -24px
+    left 73%
+    padding 32px
 
 .back:hover
   background #fff
@@ -53,6 +68,11 @@ a:hover
   width 60%
   border-radius 0 0 10px 10px
   overflow scroll
+  @media screen and (max-width: 770px)
+    width 90%
+    position relative
+    top 30px
+    border-radius 0
 
 .entry-input
   background #fff
@@ -62,7 +82,19 @@ a:hover
   height 32px
   padding-left 10px
   font-size 1.2em
+  @media screen and (max-width: 770px)
+    border-radius 0
+    font-size 1.5em
+    height 42px
 
+.entry-group
+  width 100%
+
+.entries-container
+  @media screen and (max-width: 770px)
+    padding 0
+    position relative
+    left 4%
 
 .submit-button
   background lightblue
@@ -73,9 +105,13 @@ a:hover
   color #777
   display inline-block
   height 32px
-  top -1px
   position relative
   padding 5px
+  @media screen and (max-width: 770px)
+    border-radius 0
+    height 42px
+    font-size 1.5em
+    overflow hidden
 
 .submit-button:hover
   background #777
