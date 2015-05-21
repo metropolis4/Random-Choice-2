@@ -4,6 +4,9 @@ angular.module 'app'
     $routeProvider
       .when '/',
         templateUrl: '/templates/main'
+      .when '/info',
+        templateUrl: '/templates/info'
+
 
   .directive 'optionsList', ->
     restrict: 'E'

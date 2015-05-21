@@ -3,6 +3,8 @@
   angular.module('app').config(function($routeProvider) {
     return $routeProvider.when('/', {
       templateUrl: '/templates/main'
+    }).when('/info', {
+      templateUrl: '/templates/info'
     });
   }).directive('optionsList', function() {
     return {
