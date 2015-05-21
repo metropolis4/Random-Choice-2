@@ -3,7 +3,7 @@
 .container(ng-repeat="entry in entries")
   span.dropdown(dropdown on-toggle="toggled(open)")
     a.entry.dropdown-toggle(href class="active-{{entry.active}}" dropdown-toggle) {{ entry.entry }}
-    input.dropdown-menu(type="text" value="{{entry.entry}}" ng-model="entry.entry")
+    input.dropdown-menu(type="text" value="{{entry.entry}}" ng-model="entry.entry"  ng-click="$event.stopPropagation()")
   input(type="checkbox" ng-model="entry.active" id="{{entry.entry}}")
   label(for="{{entry.entry}}")
     span.glyphicon.glyphicon-remove-circle.delete-item
