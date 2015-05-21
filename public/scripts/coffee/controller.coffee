@@ -20,7 +20,6 @@ angular.module 'app'
         .compact()
         .value()
     num = Math.floor Math.random() * $scope.selectedChoices.length
-    console.log $scope.selectedChoices.length
     if $scope.selectedChoices.length > 0
       $scope.finalChoice = $scope.selectedChoices[num]
       $scope.emptySet = false
