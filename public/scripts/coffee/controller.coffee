@@ -7,6 +7,11 @@ angular.module 'app'
     $scope.entries.push entry: $scope.entry, active: true
     $scope.entry = ''
 
+  $scope.reset = ->
+    $scope.entries = []
+    $scope.finalChoice = ''
+    $scope.selectedChoices = []
+
   $scope.status =
     isOpen: false
 

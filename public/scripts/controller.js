@@ -9,6 +9,11 @@
       });
       return $scope.entry = '';
     };
+    $scope.reset = function() {
+      $scope.entries = [];
+      $scope.finalChoice = '';
+      return $scope.selectedChoices = [];
+    };
     $scope.status = {
       isOpen: false
     };

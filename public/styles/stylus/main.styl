@@ -50,6 +50,20 @@ button:focus
 .submit-button:active
   top 1px
 
+.reset
+  border none
+  background tomato
+  color #fff
+  border-radius 8px
+  margin-left 12px
+  font-size 0.5em
+
+.reset:hover
+  background #777
+  color tomato
+  border 1px solid tomato
+  margin-bottom -2px
+
 .entry
   background white
   color #555
@@ -65,9 +79,8 @@ input[type=checkbox]
   display none
 
 .delete-item
-  color #fff
+  color tomato
   font-size 27px
-  background tomato
   display inline-block
   border none
   border-radius 6px
@@ -76,11 +89,13 @@ input[type=checkbox]
   padding 2px
   margin-left 4px
   top -1px
+  transition-property transform
+  transition-duration 0.4s
 
 .delete-item:hover
   cursor pointer
-  color tomato
-  background #fff
+  color #FF4A1DFF
+  transform rotateY(180deg)
 
 .delete-item:active
   top 1px
