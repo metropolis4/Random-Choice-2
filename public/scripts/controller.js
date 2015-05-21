@@ -9,6 +9,9 @@
       });
       return $scope.entry = '';
     };
+    $scope.status = {
+      isOpen: false
+    };
     return $scope.choose = function() {
       var num;
       $scope.selectedChoices = _.chain($scope.entries).map(function(val) {

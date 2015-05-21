@@ -7,6 +7,9 @@ angular.module 'app'
     $scope.entries.push entry: $scope.entry, active: true
     $scope.entry = ''
 
+  $scope.status =
+    isOpen: false
+
   $scope.choose = ->
     $scope.selectedChoices =
       _.chain $scope.entries

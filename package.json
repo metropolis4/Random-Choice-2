@@ -9,5 +9,9 @@
   "scripts": {
     "start": "nodemon app.js",
     "test": "mocha --reporter nyan"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5"
   }
 }
