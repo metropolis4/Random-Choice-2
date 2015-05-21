@@ -10,6 +10,7 @@ angular.module 'app'
   $scope.status =
     isOpen: false
 
+  $scope.emptySet = false
   $scope.choose = ->
     $scope.selectedChoices =
       _.chain $scope.entries
@@ -19,4 +20,9 @@ angular.module 'app'
         .compact()
         .value()
     num = Math.floor Math.random() * $scope.selectedChoices.length
-    $scope.finalChoice = $scope.selectedChoices[num]
+    console.log $scope.selectedChoices.length
+    if $scope.selectedChoices.length > 0
+      $scope.finalChoice = $scope.selectedChoices[num]
+      $scope.emptySet = false
+    else
+      $scope.emptySet = true

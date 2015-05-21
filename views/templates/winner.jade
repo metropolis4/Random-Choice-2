@@ -2,7 +2,9 @@
   h2 The Choice
   button.btn.choose(ng-click="choose()") Random Choice...
 
-.container(ng-show="finalChoice.length > 1")
+.container(ng-show="finalChoice.length > 1 && !emptySet")
   h2 Random Choice has chosen...
   .container.the-choice.pull-left
     h1 {{ finalChoice }}
+.container(ng-show="emptySet")
+  h2 No Choices to Select From!

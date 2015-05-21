@@ -12,6 +12,7 @@
     $scope.status = {
       isOpen: false
     };
+    $scope.emptySet = false;
     return $scope.choose = function() {
       var num;
       $scope.selectedChoices = _.chain($scope.entries).map(function(val) {
@@ -20,7 +21,13 @@
         }
       }).compact().value();
       num = Math.floor(Math.random() * $scope.selectedChoices.length);
-      return $scope.finalChoice = $scope.selectedChoices[num];
+      console.log($scope.selectedChoices.length);
+      if ($scope.selectedChoices.length > 0) {
+        $scope.finalChoice = $scope.selectedChoices[num];
+        return $scope.emptySet = false;
+      } else {
+        return $scope.emptySet = true;
+      }
     };
   });
 
