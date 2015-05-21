@@ -1,9 +1,9 @@
 .container(ng-controller='MainController')
   h1 Add options...
   .container.row
-    form.form-inline
+    form.form-inline(ng-submit="submitChoice()")
       .form-group.col-md-6.col-lg-6.col-sm-6
         input.entry-input(type="text" ng-model="entry" placeholder="Enter choices..." required)
-        .submit-button(ng-click="submitChoice()") Add it to the list...
+        input.submit-button(type="submit" value="Add it to the list...")
   options-list
   winner
