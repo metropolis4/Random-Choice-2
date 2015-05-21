@@ -90,6 +90,12 @@ a:hover
 .entry-group
   width 100%
 
+.wee-form
+  @media screen and (min-width: 770px)
+    display none
+.big-form
+  @media screen and (max-width: 770px)
+    display none
 .entries-container
   @media screen and (max-width: 770px)
     padding 0
@@ -131,12 +137,21 @@ a:hover
   border-radius 8px
   margin-left 12px
   font-size 0.5em
+  @media screen and (max-width: 770px)
+    border-radius 0
+    margin-left 36%
+    font-size 0.7em
+    padding 15px
 
 .reset:hover
   background #777
   color tomato
   border 1px solid tomato
   margin-bottom -2px
+
+.list-header
+  @media screen and (max-width: 770px)
+    border-bottom 1px solid #555
 
 .entry
   background white
@@ -148,6 +163,12 @@ a:hover
   height 30px
   margin-top 15px
   border-radius 10px
+  @media screen and (max-width: 770px)
+    font-size 1.6em
+    height 40px
+    margin-top 2px
+    border-radius 0
+    width 89%
 
 .entry:hover
   color #555
@@ -168,6 +189,8 @@ input[type=checkbox]
   top -1px
   transition-property transform
   transition-duration 0.4s
+  @media screen and (max-width: 770px)
+    font-size 38px
 
 .delete-item:hover
   cursor pointer
@@ -181,6 +204,11 @@ input[type=checkbox]
   background tomato
   color #fff
   margin-top 15px
+  @media screen and (max-width: 770px)
+    margin-top 0
+    height 49px
+    font-size 1.6em
+    border-radius 0
 
 .choose:hover
   background #777
@@ -189,12 +217,20 @@ input[type=checkbox]
 
 .choose:focus
   outline 0
+  color tomato
+
+.choice-title
+  @media screen and (max-width: 770px)
+    border-bottom 1px solid #555
 
 .the-choice
   background white
   color #555
   border-radius 10px
   width 60%
+  @media screen and (max-width: 770px)
+    border-radius 0
+    width 100%
 
 .active-false
   text-decoration line-through
@@ -208,3 +244,8 @@ input[type=checkbox]
   padding-left 7px
   font-size 1.2em
   width 100%
+  @media screen and (max-width: 770px)
+    top -30px
+    border-radius 0
+    font-size 1.6em
+    background #FFB9A1FF

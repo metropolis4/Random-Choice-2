@@ -1,4 +1,4 @@
-.container(ng-show="entries.length > 0")
+.container.list-header(ng-show="entries.length > 0")
   h2 The List
     button.reset(ng-click="reset()") Reset?
 .container(ng-repeat="entry in entries")
