@@ -8,7 +8,7 @@
         input.col-md-2.col-sm-3.col-xs-4.submit-button(type="submit" value="Add it to the list...")
     form.form-inline.wee-form(ng-submit="submitChoice()")
       .form-group.row.entry-group
-        input.col-md-3.col-sm-4.col-xs-8.entry-input(type="text" ng-model="entry" placeholder="Enter choices..." required)
+        input.col-md-3.col-sm-4.col-xs-8.entry-input(type="text" maxlength="25" ng-model="entry" placeholder="Enter choices..." required)
         input.col-md-2.col-sm-3.col-xs-4.submit-button(type="submit" value="Add")
 
   options-list
