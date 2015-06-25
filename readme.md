@@ -7,5 +7,5 @@ ToDo:
   4. Test Coverage
 ~~5. Responsive Design~~
 ~~6.read me info page~~
-  7. Fix checkbox positions
+~~7. Fix checkbox positions~~
   8. Remove checkbox animation in mobile view
