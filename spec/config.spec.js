@@ -16,5 +16,4 @@
       return expect(element.html()).toContain('The List');
     });
   });
-
 }).call(this);
