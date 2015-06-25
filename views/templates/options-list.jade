@@ -14,7 +14,7 @@
   .input-group
     span.dropdown(dropdown on-toggle="toggled(open)")
       a.entry.dropdown-toggle(href class="active-{{entry.active}}" dropdown-toggle) {{ entry.entry }}
-      input.dropdown-menu(type="text" value="{{entry.entry}}" ng-model="entry.entry"  ng-click="$event.stopPropagation()")
+      input.dropdown-menu(type="text" maxlength="60" value="{{entry.entry}}" ng-model="entry.entry"  ng-click="$event.stopPropagation()")
     .input-group-addon
       label(for="{{entry.entry}}") X
     input(type="checkbox" ng-model="entry.active" id="{{entry.entry}}")
